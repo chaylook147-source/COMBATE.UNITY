@@ -47,7 +47,9 @@ table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:9px 5px;t
 <section id="classificacao" class="page hidden"><div class="panel"><h2>Classificação geral</h2><p class="muted">Atualizada automaticamente a cada resultado válido.</p><div id="table"></div></div></section>
 <section id="finais" class="page hidden"><div class="panel"><h2>Fase eliminatória</h2><p class="muted">Os quatro primeiros avançam. O 1º enfrenta o 4º e o 2º enfrenta o 3º.</p><div class="actions"><button id="generateSemis">Montar semifinais</button></div><div id="semis" class="matches" style="margin-top:12px"></div><div id="podiumArea"></div></div></section>
 <div class="foot">COMBATE UNITY • Os dados ficam salvos neste navegador.</div>
-</main>
+</main> 
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js">
+</script><script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
 <script>
 const names=['Equipe A','Equipe B','Equipe C','Equipe D','Equipe E'];
 const schedule=[[['B','E'],['C','D'],'A'],[['A','E'],['B','C'],'D'],[['A','D'],['E','C'],'B'],[['A','C'],['D','B'],'E'],[['A','B'],['D','E'],'C']];
